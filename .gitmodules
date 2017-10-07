@@ -4,3 +4,9 @@
 [submodule "bundle/surround.vim"]
 	path = bundle/surround.vim
 	url = https://github.com/vim-scripts/surround.vim.git
+[submodule "bundle/L9"]
+	path = bundle/L9
+	url = https://github.com/vim-scripts/L9.git
+[submodule "bundle/fuzzyfinder"]
+	path = bundle/fuzzyfinder
+	url = https://github.com/vim-scripts/FuzzyFinder.git
