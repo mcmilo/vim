@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/ccortes/workspace/python/exercises'
-let g:netrw_dirhist_2='/Users/ccortes/workspace/python'
-let g:netrw_dirhist_3='/Users/ccortes/.vim'
