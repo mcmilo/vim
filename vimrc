@@ -1,10 +1,8 @@
 " Load pathogen bundles
 execute pathogen#infect()
 
-let mapleader = "\<Space>"
-
 " Custom
-set clipboard=unnamed
+set clipboard=unnamed " use os clipboard
 set history=1000
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
@@ -12,13 +10,13 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 " Set to auto read when a file is changed from the outside
 set autoread
 
+""""""""""""""""""
+" => UI Config
+""""""""""""""""""
 " Colors
 syntax on
 colorscheme darcula
 
-""""""""""""""""""
-" => UI Config
-""""""""""""""""""
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
 
@@ -90,10 +88,10 @@ set hlsearch
 " Complete
 set complete=.,b,u,]
 
-
 """"""""""""""""""""""
 " => Keys mapping
 """"""""""""""""""""""
+let mapleader = "\<Space>"
 nnoremap <Leader>f :NERDTreeToggle<Enter>
 nnoremap <silent> <Leader>v :NERDTreeFind<CR>
 nmap <F3> :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
@@ -103,9 +101,11 @@ vmap <F2> :w !pbcopy<CR><CR>
 imap <Tab> <C-P>
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
+" FuzzyFinder
 nmap ,f :FufFileWithCurrentBufferDir<CR>
 nmap ,b :FufBuffer<CR>
 nmap ,t :FufTaggedFile<CR>
+inoremap <CR> <Esc>
 
 """"""""""""""""""""""
 " => Filetype setup
@@ -156,4 +156,3 @@ let g:airline_powerline_fonts = 1
 " Emmet setup
 let g:user_emmet_settings = webapi#json#decode(join(readfile(expand('~/.vim/snippets.json')), "\n"))
 
-" FuzzyFinder
