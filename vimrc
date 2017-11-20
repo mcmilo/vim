@@ -145,6 +145,7 @@ au BufEnter * call UpdateJsHintConf()
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 autocmd BufEnter * NERDTreeMirror
 let NERDTreeAutoDeleteBuffer = 1
+let NERDTreeQuitOnOpen=1
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 
