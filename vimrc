@@ -116,8 +116,9 @@ inoremap <CR> <Esc>
 """"""""""""""""""""""
 " => Filetype setup
 """"""""""""""""""""""
-au FileType python setl sw=2 sts=2 et
+au FileType python setl sw=4 sts=4 et
 au FileType html setl sw=2 sts=2 et
+au FileType php setl sw=4 sts=4 et
 
 """"""""""""""""""""""
 " => Plugins setup
