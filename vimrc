@@ -73,6 +73,12 @@ set si "Smart indent
 " => Searching
 """"""""""""""""""""
 
+" Search files recursevely
+set path+=**
+
+" Files and folder to ignore
+set wildignore+=**/node_modules/**,**/bower_components/**,**/build/**,**/dist/**,**/docs/**,*.jpg,*.png,*.gif,*.mp4,*.webm
+
 " Ignore case when searching
 set ignorecase
 
@@ -157,3 +163,5 @@ let g:airline_powerline_fonts = 1
 " Emmet setup
 let g:user_emmet_settings = webapi#json#decode(join(readfile(expand('~/.vim/snippets.json')), "\n"))
 
+" CtrlP setup
+let g:ctrlp_custom_ignore = 'node_modules\|bower_components\|DS_Store\|git'
