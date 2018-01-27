@@ -111,7 +111,7 @@ nnoremap <C-y> 3<C-y>
 nmap ,f :FufFileWithCurrentBufferDir<CR>
 nmap ,b :FufBuffer<CR>
 nmap ,t :FufTaggedFile<CR>
-inoremap <CR> <Esc>
+inoremap jk <Esc>
 
 """"""""""""""""""""""
 " => Filetype setup
